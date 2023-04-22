@@ -23,8 +23,8 @@ public class Producto {
     @Column(name="cantidad")
     private Integer cantidad;
 
-    @Column(name="precioUnitario")
-    private Double precioUnitario;
+    @Column(name="precio")
+    private Double precio;
 
     @Column(name="clasificacion")
     private String clasificacion;
@@ -61,13 +61,13 @@ public class Producto {
     public Producto() {
     }
 
-    public Producto(Integer id, String nombre, String foto, String descripcion, Integer cantidad, Double precioUnitario, String clasificacion, String marca, String presentacion, Double peso, Boolean estado, String proveedor, Double volumen, String fechaIngreso, String fechaVencimiento, Boolean aplicaDescuento, String IVA) {
+    public Producto(Integer id, String nombre, String foto, String descripcion, Integer cantidad, Double precio, String clasificacion, String marca, String presentacion, Double peso, Boolean estado, String proveedor, Double volumen, String fechaIngreso, String fechaVencimiento, Boolean aplicaDescuento, String IVA) {
         this.id = id;
         this.nombre = nombre;
         this.foto = foto;
         this.descripcion = descripcion;
         this.cantidad = cantidad;
-        this.precioUnitario = precioUnitario;
+        this.precio = precio;
         this.clasificacion = clasificacion;
         this.marca = marca;
         this.presentacion = presentacion;
@@ -113,12 +113,12 @@ public class Producto {
         this.cantidad = cantidad;
     }
 
-    public Double getPrecioUnitario() {
-        return precioUnitario;
+    public Double getPrecio() {
+        return precio;
     }
 
-    public void setPrecioUnitario(Double precioUnitario) {
-        this.precioUnitario = precioUnitario;
+    public void setPrecio(Double precio) {
+        this.precio = precio;
     }
 
     public String getClasificacion() {
